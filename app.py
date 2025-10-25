@@ -325,7 +325,7 @@ def main():
             with st.spinner('🔄 Loading models and analyzing...'):
                 try:
                     # Check if model files exist
-                    if not os.path.exists('preprocessing_objects.pkl') or not os.path.exists('best_model_xgboost.pkl'):
+                    if not os.path.exists('preprocessing_objects .pkl') or not os.path.exists('best_model_xgboost .pkl'):
                         st.error("⚠️ Model files not found! Please ensure the following files are in the same directory:")
                         st.markdown("""
                         - `preprocessing_objects.pkl`
@@ -336,14 +336,14 @@ def main():
                         return
                     
                     # Load models
-                    with open('preprocessing_objects.pkl', 'rb') as f:
+                    with open('preprocessing_objects .pkl', 'rb') as f:
                         prep_objects = pickle.load(f)
                     
                     scaler = prep_objects['scaler']
                     pca = prep_objects['pca']
                     lda = prep_objects['lda']
                     
-                    with open('best_model_xgboost.pkl', 'rb') as f:
+                    with open('best_model_xgboost .pkl', 'rb') as f:
                         model = pickle.load(f)
                     
                     vgg_model = load_vgg_model()
