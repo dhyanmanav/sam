@@ -15,8 +15,8 @@ import os
 from PIL import Image
 import io
 import base64
-from pydub import AudioSegment
-from pydub.generators import Sine
+# from pydub import AudioSegment
+# from pydub.generators import Sine
 import tempfile
 
 # === CLASS NAMES (EXACTLY AS IN TRAINING) ===
